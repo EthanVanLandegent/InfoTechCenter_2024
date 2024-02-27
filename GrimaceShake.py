@@ -1,6 +1,6 @@
 print("\n*************************************************\n")
 
-print("Weather Branch\n")
+print("Weather Branch")
 
 #Import Libraries Here
 import random
@@ -16,7 +16,7 @@ def weather():
 weatherAlert = weather()
 
 def vehicleResponseSystem():
-    if weatherAlert == "Snowy":
+    if weatherAlert == "snowy":
         print("\nNational Weather Service has updated our alarm by 30 minutes because of the forecast of",weatherAlert,
               "weather conditions.")
         print("VRS has been engaged only allowing you to drive 50mph")
@@ -28,6 +28,22 @@ def vehicleResponseSystem():
         print("\nNational Weather Service has updated our alarm by 10 minutes because of the forecast of", weatherAlert,
               "weather conditions.")
         print("VRS has been engaged only allowing you to drive 60mph")
+    elif weatherAlert == "foggy":
+        print("\nNational Weather Service has updated our alarm by 25 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 50mph")
+    elif weatherAlert == "windy":
+        print("\nNational Weather Service has updated our alarm by 5 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 65mph")
+    elif weatherAlert == "icy":
+        print("\nNational Weather Service has updated our alarm by 60 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 25mph")
+    else:
+        print("\nNational Weather Service has updated our alarm by 0 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 100mph")
 
 
 vehicleResponseSystem()
